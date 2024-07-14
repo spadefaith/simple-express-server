@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2021",
+    "moduleResolution": "node",
+    "allowJs": true,
+    "checkJs": true,
+    "removeComments": true,
+    "outDir": "dist", // Compiled Output Directory
+    "rootDir": "",
+    "typeRoots": ["./node_modules/@types"],
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    // "resolvePackageJsonImports": false,
+    "lib": ["es6", "es2017", "es2021", "es2019"]
+
+    // "experimentalDecorators": true,
+    // "emitDecoratorMetadata": true
+  },
+
+  "include": [
+    "src/**/*.js", // Every js file inside src folder
+    "src/**/*.ts", // Every ts file inside src folder
+    "server.js"
+  ],
+  "exclude": [
+    "node_modules",
+    ".serverless", // Exclude serverless directory
+    "dist" // Exclude compiled output by Typescript compiler
+  ]
+}

@@ -1,0 +1,14 @@
+version: "3"
+services:
+  app:
+    container_name: simple-express-server
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "9331:3000"
+    volumes:
+      - ./dist:/dist
+    environment:
+      NODE_ENV: ${NODE_ENV}
+  # Add other services (e.g., a database service) if necessary
