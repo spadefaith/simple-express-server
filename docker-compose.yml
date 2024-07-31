@@ -1,7 +1,7 @@
 version: "3"
 services:
   app:
-    container_name: simple-express-server
+    container_name: simple-express-server-${NODE_ENV}
     build:
       context: .
       dockerfile: Dockerfile
