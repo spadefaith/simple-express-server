@@ -66,10 +66,10 @@ handleRequest();
 
 
 
-// app.listen(process.env.PORT, (err)=>{
-//     if(err){
-//         console.log(err);
-//     } else {
-//         console.log(`listening to port ${process.env.PORT}`);
-//     }
-// })
+app.listen(process.env.PORT, (err)=>{
+    if(err){
+        console.log(err);
+    } else {
+        console.log(`listening to port ${process.env.PORT}`);
+    }
+})
