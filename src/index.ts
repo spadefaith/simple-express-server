@@ -62,7 +62,7 @@ async function handleRequest() {
 }
 
 // Call the function to handle the request
-handleRequest();
+// handleRequest();
 
 
 
